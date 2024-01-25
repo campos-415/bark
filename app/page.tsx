@@ -4,6 +4,7 @@ import { service } from "@/constant";
 import About from "@/components/About";
 import Faqs from "@/components/Faqs";
 import Reviews from "@/components/Reviews";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <ServiceList items={service} />
       <Faqs />
       <Reviews />
+      <Footer />
     </>
   );
 }

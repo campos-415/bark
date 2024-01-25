@@ -1,9 +1,9 @@
 export interface Product {
-  id: string
-  category: string
-  name: string
-  price: string
-  images:string[]
+  id: string;
+  category: string;
+  name: string;
+  price: string;
+  images: string[];
 }
 export interface ReviewProps {
   id: number;

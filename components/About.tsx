@@ -6,7 +6,7 @@ import Container from "./Container";
 function About() {
   return (
     <Container classname="relative bg-[#005466] ">
-      <section className="pt-12 md:pt-24">
+      <section className="pt-12 md:pt-24 select-none">
         <div
           id="about"
           className="w-full flex md:h-screen flex-col md:flex-row items-center py-16 mx-auto max-w-7xl z-50">

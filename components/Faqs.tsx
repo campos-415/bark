@@ -12,7 +12,9 @@ import { faqs } from "@/constant";
 function Faqs() {
   return (
     <Container>
-      <section id="faqs" className="relative flex items-center justify-center bg-[#005466]">
+      <section
+        id="faqs"
+        className="relative flex items-center justify-center bg-[#005466] select-none">
         <div className="py-24">
           <div className="flex items-center justify-center relative z-50">
             <h1 className="text-3xl font-extrabold md:text-5xl lg:text-7xl text-white text-center ">

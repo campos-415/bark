@@ -1,21 +1,21 @@
-"use client"
-import React from 'react'
-import Container from './Container'
-import  Links  from 'next/link'
-import LogoImage from "../public/embarkaderoLogo.webp"
-import LogoImageWhite from "../public/embarkaderoLogoWhite.png"
-import Image from 'next/image'
-import { linkRoutes } from '@/constant'
-import { Button } from './ui/button'
-import { Menu, Moon, Sun } from 'lucide-react'
-import {useTheme} from "next-themes"
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
-import { Link } from 'react-scroll'
+"use client";
+import React from "react";
+import Container from "./Container";
+import Links from "next/link";
+import LogoImage from "../public/embarkaderoLogo.webp";
+import LogoImageWhite from "../public/embarkaderoLogoWhite.png";
+import Image from "next/image";
+import { linkRoutes } from "@/constant";
+import { Button } from "./ui/button";
+import { Menu, Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Link } from "react-scroll";
 
 function Header() {
-  const {theme, setTheme} = useTheme()
+  const { theme, setTheme } = useTheme();
   return (
-    <header className="sm:flex sm:justify-between py-3 px-4 border-b fixed z-[100] bg-white dark:bg-[#001519] mx-auto w-full ">
+    <header className="sm:flex sm:justify-between py-3 px-4 border-b fixed z-[100] bg-white dark:bg-[#001519] mx-auto w-full select-none">
       <Container>
         <div className="relative  sm:px-6 lg:px-8 flex h-16 items-center justify-between w-full">
           <div className="flex items-center">
@@ -29,7 +29,9 @@ function Header() {
                   <Menu className="h-6 w-6 md:hidden z-50" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="mt-[90px] w-[300px] sm:w-[400px]">
+              <SheetContent
+                side="left"
+                className="mt-[90px] w-[300px] sm:w-[400px]">
                 <nav className="flex flex-col gap-4 ">
                   {linkRoutes.map((route) => (
                     <Link
@@ -91,4 +93,4 @@ function Header() {
   );
 }
 
-export default Header
+export default Header;
