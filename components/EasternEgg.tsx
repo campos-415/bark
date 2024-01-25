@@ -24,10 +24,9 @@ function EasternEgg({
     <div
       className={`flex items-center justify-center ${
         padding && `${padding}`
-        } hover:cursor-pointer`}>
-      
+      } hover:cursor-pointer`}>
       {isEggCracked ? (
-        <div className="flex items-center justify-center flex-col  dark:hidden">
+        <div className="flex items-center justify-center flex-col  dark:hidden ">
           <Image
             src={crackedEgg}
             alt=""
@@ -47,13 +46,21 @@ function EasternEgg({
           </div>
         </div>
       ) : (
-        <Image className="dark:hidden flex" src={egg} alt="" width={30} height={30} onClick={openEgg} />
+        <Image
+          className="dark:hidden flex"
+          src={egg}
+          alt=""
+          width={30}
+          height={30}
+          onClick={openEgg}
+        />
       )}
 
       {isEggCracked ? (
-        <div className="hidden items-center justify-center flex-col dark:flex">
+        <div className="hidden items-center justify-center flex-col dark:flex ">
           <Image
             src={crackedEggWhite}
+            className=""
             alt=""
             width={40}
             height={40}
@@ -71,7 +78,14 @@ function EasternEgg({
           </div>
         </div>
       ) : (
-        <Image className="dark:flex hidden" src={eggWhite} alt="" width={30} height={30} onClick={openEgg} />
+        <Image
+          className="dark:flex hidden"
+          src={eggWhite}
+          alt=""
+          width={30}
+          height={30}
+          onClick={openEgg}
+        />
       )}
     </div>
   );

@@ -18,9 +18,9 @@ function Footer() {
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between">
           <a
-            href="https://flowbite.com/"
+            href="https://embarkadero.vercel.app"
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-            <Image src={imageLogo} className="h-8 w-24" alt="Flowbite Logo" />
+            <Image src={imageLogo} className="h-8 w-24" alt="ESC Logo" />
 
             <span className="hidden text-primary/70 md:inline self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               EmBARKadero Social Club
@@ -41,7 +41,7 @@ function Footer() {
         <div className="flex items-center justify-center space-x-2 h-16 max-w-[600px] mx-auto">
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <a href="https://embarkadero.vercel.app" className="hover:underline">
               Emabarkadero Social Club (ESC)™
             </a>
             . All Rights Reserved.
