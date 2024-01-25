@@ -4,7 +4,6 @@ import { Avatar, AvatarFallback } from "./avatar";
 import Image from "next/image";
 import { AvatarIcon, StarFilledIcon } from "@radix-ui/react-icons";
 import { StarIcon } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
 
 function ReviewCard() {
   return (
