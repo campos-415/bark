@@ -15,10 +15,10 @@ import { Link } from "react-scroll";
 function Header() {
   const { theme, setTheme } = useTheme();
   return (
-    <header className="sm:flex sm:justify-between py-3 px-4 border-b fixed z-[100] bg-white dark:bg-[#001519] mx-auto w-full select-none">
+    <header className="sm:flex sm:justify-between  py-3 px-4 border-b fixed z-[100] bg-white dark:bg-[#001519] mx-auto w-full select-none">
       <Container>
-        <div className="relative  sm:px-6 lg:px-8 flex h-16 items-center justify-between w-full">
-          <div className="flex items-center">
+        <div className="relative sm:px-6 lg:px-8 flex h-16 items-center justify-between w-full">
+          <div className="flex items-center justify-between">
             <Sheet>
               <SheetTrigger>
                 <Button
@@ -45,7 +45,7 @@ function Header() {
                 </nav>
               </SheetContent>
             </Sheet>
-            <Links className="ml-12" href={"/"}>
+            <Links className=" ml-12" href={"/"}>
               {theme === "light" ? (
                 <Image
                   src={LogoImage}
@@ -80,7 +80,6 @@ function Header() {
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               variant="ghost"
               size="icon"
-              className="mr-6"
               aria-label="Toogle Theme">
               <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
