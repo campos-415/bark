@@ -1,15 +1,13 @@
-import React from 'react'
+import React from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-import Container from './Container'
-import { Card, CardContent, CardFooter } from "../components/ui/card";
-import { faqs } from '@/constant';
-
+import Container from "./Container";
+import { Card, CardContent } from "../components/ui/card";
+import { faqs } from "@/constant";
 
 function Faqs() {
   return (
@@ -30,9 +28,7 @@ function Faqs() {
                       key={question.id}
                       value={`'item-'${question.id}`}>
                       <AccordionTrigger>{question.question}</AccordionTrigger>
-                      <AccordionContent>
-                        {question?.answer}
-                      </AccordionContent>
+                      <AccordionContent>{question?.answer}</AccordionContent>
                     </AccordionItem>
                   ))}
                 </Accordion>
@@ -45,4 +41,4 @@ function Faqs() {
   );
 }
 
-export default Faqs
+export default Faqs;

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import aboutUsPicture from "../public/img/aboutUsPicture.webp";
-import { Link } from "react-scroll";
 import Container from "./Container";
 
 function About() {

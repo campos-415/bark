@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardFooter } from "./card";
-import { Product } from "../../types"
+import { Product } from "../../types";
 
-interface aboutUsCardProps{
-  data: Product
+interface aboutUsCardProps {
+  data: Product;
 }
-const ServiceCard= ({ data }:aboutUsCardProps) => {
+const ServiceCard = ({ data }: aboutUsCardProps) => {
   return (
     <Link
       href="/"
@@ -38,6 +38,6 @@ const ServiceCard= ({ data }:aboutUsCardProps) => {
       </Card>
     </Link>
   );
-}
-  
-  export default ServiceCard
+};
+
+export default ServiceCard;

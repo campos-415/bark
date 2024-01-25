@@ -3,13 +3,11 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import React from "react";
 import Container from "./Container";
 import { Button } from "./ui/button";
-import { ArrowRight, ArrowRightFromLine } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { imagesLink } from "@/constant";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -19,9 +17,11 @@ function CarouselContainer() {
     <div className="pt-24 md:pt-0 h-[100dvh] flex flex-row items-center justify-center rounded-lg text-center">
       <Container classname="px-8 sm:px-0 pb-12 md:pb-0 ">
         <div className=" py-8">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl text-[#ff9100] font-extrabold">EmBARKadero</h1>
+          <h1 className="text-3xl md:text-5xl lg:text-7xl text-[#ff9100] font-extrabold">
+            EmBARKadero
+          </h1>
           <h2 className="text-2xl md:text-4xl lg:text-6xl font-medium text-black dark:text-white">
-          Where Every Day is a Dog Day!
+            Where Every Day is a Dog Day!
           </h2>
         </div>
         <Carousel plugins={[plugin.current]}>

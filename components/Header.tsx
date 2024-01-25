@@ -7,8 +7,7 @@ import LogoImageWhite from "../public/embarkaderoLogoWhite.png"
 import Image from 'next/image'
 import { linkRoutes } from '@/constant'
 import { Button } from './ui/button'
-import { Menu, Moon, ShoppingCart, Sun } from 'lucide-react'
-import ProfileButton from './ui/ProfileButton'
+import { Menu, Moon, Sun } from 'lucide-react'
 import {useTheme} from "next-themes"
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 import { Link } from 'react-scroll'
