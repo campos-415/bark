@@ -15,7 +15,7 @@ function ServiceList({items}:ServiceListProps) {
           <ServiceCard key={item.id} data={item} />
         ))}
       </div>
-      <div className="div-with-spill-svg xl:xl-div-with-spill-svg"></div>
+      <div className="div-with-spill-svg xl:xl-div-with-spill-svg lg:lg-div-with-spill-svg"></div>
     </section>
   );
 }

@@ -133,32 +133,32 @@ export const faqs = [
       "Our pricing structure is designed to accommodate the needs of all our guests. For daycare services, the fee is $45 per day for rescued dogs and $50 per day for non-rescued dogs. A special rate of $80 per day is available for two dogs registered under the same owner. Our overnight boarding service is offered at a rate of $80 per night. We also provide tailored discounts for families with multiple pets. Please inquire for more details.",
     id: 6,
   },
-  // {
-  //   question:
-  //     "Availability of any special accommodations for pets with specific needs or medical conditions.",
-  //   answer:
-  //     "We offer specialized care for pets with specific dietary needs and medical conditions. Please discuss with us in advance.",
-  //   id: 7,
-  // },
-  // {
-  //   question: "The process for updating or canceling reservations.",
-  //   answer:
-  //     "We understand plans can change. While we don't charge a cancellation fee, we kindly ask you to give us at least 24 hours notice to update or cancel your reservation. This helps us manage our schedule and accommodate other furry friends.",
-  //   id: 8,
-  // },
-  // {
-  //   question:
-  //     "Options for regular updates or check-ins for pet owners during their pet's stay (e.g., daily photos or report cards).",
-  //   answer:
-  //     "While we don't send individual updates, we post daily photos of our adorable guests on our Instagram account. Follow us @embarkaderosocialclub to stay connected with your pet's day-to-day fun!",
-  //   id: 9,
-  // },
-  // {
-  //   question: "Contact and booking information.",
-  //   answer:
-  //     "Contact us at (415) 431-3647 or send us an email at info@embarkaderosocialclub.com. Our team is here to assist you!",
-  //   id: 10,
-  // },
+  {
+    question:
+      "Availability of any special accommodations for pets with specific needs or medical conditions.",
+    answer:
+      "We offer specialized care for pets with specific dietary needs and medical conditions. Please discuss with us in advance.",
+    id: 7,
+  },
+  {
+    question: "The process for updating or canceling reservations.",
+    answer:
+      "We understand plans can change. While we don't charge a cancellation fee, we kindly ask you to give us at least 24 hours notice to update or cancel your reservation. This helps us manage our schedule and accommodate other furry friends.",
+    id: 8,
+  },
+  {
+    question:
+      "Options for regular updates or check-ins for pet owners during their pet's stay (e.g., daily photos or report cards).",
+    answer:
+      "While we don't send individual updates, we post daily photos of our adorable guests on our Instagram account. Follow us @embarkaderosocialclub to stay connected with your pet's day-to-day fun!",
+    id: 9,
+  },
+  {
+    question: "Contact and booking information.",
+    answer:
+      "Contact us at (415) 431-3647 or send us an email at info@embarkaderosocialclub.com. Our team is here to assist you!",
+    id: 10,
+  },
 ];
 
 export const reviews = [

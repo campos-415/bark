@@ -12,7 +12,7 @@ function ReviewCard({ id, name, image, review, stars, date, readMore }: ReviewPr
   const reviewstart:number = 5;
 
   return (
-    <Card className="m-2 mx-auto max-w-xs ml-4">
+    <Card className="m-2 mx-auto max-w-xs md:ml-4">
       <CardHeader className="p-4">
         <Avatar>
           <Image
