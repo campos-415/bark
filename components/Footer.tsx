@@ -4,7 +4,9 @@ import React, { useState } from "react";
 import imageLogo from "../public/embarkaderoLogo.webp";
 import { linkRoutes } from "@/constant";
 import EasternEgg from "./EasternEgg";
+import eggWhite from "../public/eggWhite.png";
 import egg from "../public/egg.png";
+import crackedEggWhite from "../public/crackedWhite.png";
 import crackedEgg from "../public/cracked.png";
 function Footer() {
   const [isEggCracked, setIsEggCracked] = useState(false);
@@ -36,7 +38,7 @@ function Footer() {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div className="flex items-center justify-center space-x-2">
+        <div className="flex items-center justify-center space-x-2 h-16 max-w-[600px] mx-auto">
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
             <a href="https://flowbite.com/" className="hover:underline">
@@ -45,9 +47,12 @@ function Footer() {
             . All Rights Reserved.
           </span>
           <EasternEgg
+            
             isEggCracked={isEggCracked}
             openEgg={openEgg}
             egg={egg}
+            eggWhite={eggWhite}
+            crackedEggWhite={crackedEggWhite}
             crackedEgg={crackedEgg}
           />
         </div>
