@@ -2,32 +2,180 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+    --foreground: 34.3 100% 50%;
+    /* Converted from RGB(254, 196, 111) */
+    --card: 0 0% 100%;
+    --card-foreground: 34.3 100% 50%;
+    /* Converted from RGB(254, 196, 111) */
+    --popover: 0 0% 100%;
+    --popover-foreground: 34.3 100% 50%;
+    /* Converted from RGB(254, 196, 111) */
+    --primary: 190 100% 20%;
+    /* Average Teal-like color from the variations */
+    --primary-foreground: 210 20% 98%;
+    --secondary: 190 100% 20%;
+    /* Average Teal-like color from the variations */
+    --secondary-foreground: 190 100% 20%;
+    /* Average Teal-like color from the variations */
+    --muted: 190 100% 20%;
+    /* Average Teal-like color from the variations */
+    --muted-foreground: 190 100% 20%;
+    /* Average Teal-like color from the variations */
+    --accent: 190 100% 20%;
+    /* Average Teal-like color from the variations */
+    --accent-foreground: 190 100% 20%;
+    /* Average Teal-like color from the variations */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 190 100% 20%;
+    /* Average Teal-like color from the variations */
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 190 100% 5%;
+    /* Dark teal, almost black */
+    --foreground: 0 0% 98%;
+    /* Almost white for contrast */
+    --card: 190 100% 5%;
+    /* Dark teal, almost black */
+    --card-foreground: 0 0% 98%;
+    /* Almost white for contrast */
+    --popover: 190 100% 5%;
+    /* Dark teal, almost black */
+    --popover-foreground: 0 0% 98%;
+    /* Almost white for contrast */
+    --primary: 34.3 100% 50%;
+    /* A slightly lighter shade of dark teal */
+    --primary-foreground: 0 0% 98%;
+    /* Almost white for contrast */
+    --secondary: 190 30% 10%;
+    /* Dark grey-teal for subtle differentiation */
+    --secondary-foreground: 0 0% 98%;
+    /* Almost white for contrast */
+    --muted: 190 30% 10%;
+    /* Dark grey-teal */
+    --muted-foreground: 0 0% 98%;
+    /* Almost white for contrast */
+    --accent: 34.3 100% 50%;
+    /* Bright orange for small accent elements */
+    --accent-foreground: 0 0% 98%;
+    /* Almost white for contrast */
+    --destructive: 0 100% 20%;
+    /* Dark red */
+    --destructive-foreground: 0 0% 98%;
+    /* Almost white for contrast */
+    --border: 190 30% 20%;
+    /* Dark grey-teal borders for subtle separation */
+    --input: 190 30% 20%;
+    /* Dark grey-teal input fields for subtlety */
+    --ring: 34.3 100% 50%;
+    /* A slightly lighter shade of dark teal for focus rings */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .link {
+    @apply relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100
+  }
+
+  /* Add these CSS classes to your stylesheets or CSS-in-JS solution */
+  /* Add these CSS classes to your stylesheets or CSS-in-JS solution */
+  .fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    /* You can adjust the duration and easing as needed */
+  }
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* You can adjust the duration and easing as needed */
+  }
+
+  /* styles/global.css */
+  .div-with-wave-svg::after {
+    z-index: -10;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Fixed height or as per your design */
+    background-image: url('../public/img/wave.svg');
+    background-size: cover;
+    /* Cover ensures that the background covers the area */
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  .div-with-spill-svg::before {
+    content: '';
+    z-index: 2;
+    display: block;
+    position: absolute;
+    bottom:-350px;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    height: 350px;
+    /* Fixed height or as per your design */
+    background-image: url('../public/img/spill.svg');
+    background-size: cover;
+    /* Cover ensures that the background covers the area */
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  .xl-div-with-spill-svg::before {
+    content: '';
+    /* z-index */
+    display: block;
+    position: absolute;
+    bottom: -410px;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    height: 410px;
+    /* Fixed height or as per your design */
+    background-image: url('../public/img/spill.svg');
+    background-size: cover;
+    /* Cover ensures that the background covers the area */
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  
+  .div-with-blob-svg::after {
+    /* z-index: -1; */
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    height: 90%;
+    /* Fixed height or as per your design */
+    background-image: url('../public/img/blob-scene.svg');
+    background-size: cover;
+    /* Cover ensures that the background covers the area */
+    background-repeat: no-repeat;
+    background-position: bottom center;
   }
 }
