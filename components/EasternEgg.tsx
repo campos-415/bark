@@ -17,7 +17,7 @@ function EasternEgg({
 }: Props) {
   return (
     <div
-      className={`flex items-center justify-center ${padding && `${padding}`}`}>
+      className={`flex items-center justify-center ${padding && `${padding}`} hover:cursor-pointer`}>
       {isEggCracked ? (
         <div className="flex items-center justify-center absolute pl-48">
           <Image
