@@ -97,55 +97,64 @@ export const service = [
 export const faqs = [
   {
     question: "Enrollment procedures for new pets.",
-    answer: "",
+    answer:
+      "Enrollment begins with a meet-and-greet session to ensure your pet feels comfortable in our environment. Following this, you'll need to fill out our Pet Profile form and provide up-to-date vaccination records.",
     id: 1,
     item: "1",
   },
   {
     question: "Vaccination and health requirements for pets.",
-    answer: "",
+    answer:
+      "All pets must have up-to-date vaccinations for Rabies, DHPP, and Bordetella. We also require a recent wellness check from a veterinarian.",
     id: 2,
   },
   {
     question: "Daycare services and schedules.",
-    answer: "",
+    answer:
+      "Our daycare is open Monday to sunday, 7 AM to 7 PM. We offer structured playtimes and rest periods to cater to your pet's needs.",
     id: 3,
   },
-  {
-    question: "Boarding options and policies.",
-    answer: "",
-    id: 4,
-  },
+{
+  question: "Boarding options and policies.",
+  answer: "Our boarding services are available seven days a week, offering both in-kennel and out-of-kennel options. In-kennel boarding provides each pet with their personal space, ensuring comfort and privacy. Out-of-kennel boarding allows pets to sleep in our daycare area, enjoying the company of other out-of-kennel companions. We require advance reservations to ensure the highest quality of care.",
+  id: 4,
+},
   {
     question: "Facility location and hours of operation.",
-    answer: "",
+    answer:
+      "Located at  1766 Mission St. San Francisco, CA 94103. Open Monday to Sunday, 7 AM to 7 PM.",
     id: 5,
   },
   {
     question: "Pricing for daycare and boarding services.",
-    answer: "",
+    answer:
+      "Our pricing structure is designed to accommodate the needs of all our guests. For daycare services, the fee is $45 per day for rescued dogs and $50 per day for non-rescued dogs. A special rate of $80 per day is available for two dogs registered under the same owner. Our overnight boarding service is offered at a rate of $80 per night. We also provide tailored discounts for families with multiple pets. Please inquire for more details.",
     id: 6,
   },
   {
     question:
       "Availability of any special accommodations for pets with specific needs or medical conditions.",
-    answer: "",
+    answer:
+      "We offer specialized care for pets with specific dietary needs and medical conditions. Please discuss with us in advance.",
     id: 7,
   },
   {
     question: "The process for updating or canceling reservations.",
-    answer: "",
-    id:8,
+    answer:
+      "We understand plans can change. While we don't charge a cancellation fee, we kindly ask you to give us at least 24 hours notice to update or cancel your reservation. This helps us manage our schedule and accommodate other furry friends.",
+    id: 8,
   },
   {
     question:
       "Options for regular updates or check-ins for pet owners during their pet's stay (e.g., daily photos or report cards).",
-    answer: "",
+    answer:
+      "While we don't send individual updates, we post daily photos of our adorable guests on our Instagram account. Follow us @embarkaderosocialclub to stay connected with your pet's day-to-day fun!",
     id: 9,
   },
   {
     question: "Contact and booking information.",
-    answer: "",
+    answer:
+      "Contact us at (415) 431-3647 or send us an email at info@embarkaderosocialclub.com. Our team is here to assist you!",
     id: 10,
   },
 ];
